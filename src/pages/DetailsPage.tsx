@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
@@ -43,6 +44,22 @@ const DetailsPage = () => {
 
   return (
     <main className="relative bg-black text-white">
+      <Helmet>
+        <title>Details Page | Sirio Berati</title>
+        <meta name="description" content="Explore detailed insights and creative projects by Sirio Berati." />
+        <meta name="keywords" content="Sirio Berati, digital creativity, AI projects, portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sirioberati.com/explore" />
+        <meta property="og:title" content="Details Page | Sirio Berati" />
+        <meta property="og:description" content="Explore detailed insights and creative projects by Sirio Berati." />
+        <meta property="og:image" content="https://i.ibb.co/6v8BcSF/Sirio.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://sirioberati.com/explore" />
+        <meta name="twitter:title" content="Details Page | Sirio Berati" />
+        <meta name="twitter:description" content="Explore detailed insights and creative projects by Sirio Berati." />
+        <meta name="twitter:image" content="https://i.ibb.co/6v8BcSF/Sirio.jpg" />
+        <link rel="canonical" href="https://sirioberati.com/explore" />
+      </Helmet>
       {/* Animated Background */}
       <motion.div 
         className="fixed inset-0 z-0"

@@ -3,15 +3,15 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
   build: {
     rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom', 'react-helmet-async'],
-        },
+      input: {
+        main: './index.html',
+        explore: './public/explore.html',
+        brand: './public/brand.html',
+        freeguide: './public/freeguide.html',
+        guideupsell: './public/guide-upsell.html',
+        mediakit: './public/mediakit.html'
       },
     },
   },
